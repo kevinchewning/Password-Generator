@@ -118,6 +118,76 @@ button[disabled] {
   overflow: hidden;
 }
 
+.password-criteria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#prompt-1 {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: fit-content;
+  top: 25%;
+  padding: 25px;
+  margin: 0 25%;
+}
+
+#password-length {
+  flex: 0 0 78%;
+  margin-top: 25px;
+}
+
+#submit-length {
+  flex: 0 0 18%;
+  height: 22px;
+  margin-top: 25px;
+}
+
+#prompt-2 {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: fit-content;
+  top: 25%;
+  padding: 10px;
+  margin: 0 25%;
+}
+
+#prompt-2 h2 {
+  margin-top: 0px;
+  text-align: center;
+  flex: 0 0 100%;
+}
+
+#prompt-2 ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+
+#prompt-2 ul li {
+  flex: 0 0 100%;
+}
+
+.checkbox {
+  width: 10%;
+}
+
+#prompt-2 ul li label {
+  flex: 0 0 80%;
+}
+
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -127,6 +197,16 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+  }
+
+  #prompt-1 {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+
+  #prompt-2 {
+    width: 75%;
+    margin: 0 12.5%;
   }
 }
 

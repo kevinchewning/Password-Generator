@@ -29,6 +29,32 @@
         </div>
       </div>
     </div>
+    <div class="password-criteria" id="prompt-1">
+      <label for="password-length">Please enter preferred password length.</label>
+      <input type="number" id="password-length" placeholder="Between 8 and 128 characters.">
+      <button id="submit-length" onclick="submitLength();">Submit</button>
+    </div>
+    <div class="password-criteria" id="prompt-2">
+      <h2 class="checkbox">Please check which character types you would like to use.</h2>
+      <ul>
+        <li>
+          <input type="checkbox" class="checkbox" id="lowercase"/>
+          <label for="lowercase">lowercase</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" id="uppercase"/>
+          <label for="uppercase">UPPERCASE</label>
+        </li>
+        <li>
+          <input type="checkbox" class="checkbox" id="numeric"/>
+          <label for="numeric">Numeric (123)</label>
+        <li>
+          <input type="checkbox" class="checkbox" id="special-char"/>
+          <label for="special-char">Special ($#@)</label>
+        </li>
+      </ul>
+      <button id="submit-char" onclick="submitChar();">Submit</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
