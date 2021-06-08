@@ -4,7 +4,7 @@
   -character types (lowercase,uppercase,numeric,special) must pick at least one
 */
 
-// Assignment Code
+// Variables
 var generateBtn = document.querySelector("#generate");
 
 var lowercaseChar = "abcdefghijklmnopqrstuvwxyz"
@@ -21,17 +21,10 @@ var passwordLength = document.getElementById('password-length').value;
 
 var password = "";
 
-// Write password to the #password input
-function writePassword() {
-  document.getElementById('password').innerHTML = generatePassword();
-}
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", showPrompts);
 
-
-//testing area
-
+//Prompts
 function showPrompts() {
   document.getElementById('prompt-1').style.display = "flex"
 }
@@ -63,8 +56,19 @@ function submitChar() {
   }
 }
 
+// Write password to the #password input
+function writePassword() {
+  document.getElementById('password').innerHTML = generatePassword();
+}
+
 function generatePassword() {
   var passwordChar = "";
+  password = ""
+
+  lowercase = document.getElementById('lowercase').checked;
+  uppercase = document.getElementById('uppercase').checked;
+  numeric = document.getElementById('numeric').checked;
+  special = document.getElementById('special-char').checked;
 
   lowercase ? (passwordChar += lowercaseChar) : "";
   uppercase ? (passwordChar += uppercaseChar) : "";
