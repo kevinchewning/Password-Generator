@@ -12,7 +12,7 @@ Download repository from https://github.com/kevinchewning/Password-Generator
 
 Site can be viewed at https://kevinchewning.github.io/Password-Generator/
 
-![Site Screenshot](assets/images/pg-screenshot.png)
+![Site Screenshot](pg-screenshot.png)
 
 ## Credits
 
